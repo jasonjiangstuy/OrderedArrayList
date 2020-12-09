@@ -3,6 +3,6 @@ public class NoNullArrayList<T> extends ArrayList<T>{
     public NoNullArrayList(){
 
     }
-    add
+    public add
     
 }

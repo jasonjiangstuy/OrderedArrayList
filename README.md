@@ -17,3 +17,6 @@ actually sorting
     how do we sortin ther first place
     we get an array that represents the indexs, and then a new array that is sorted based on value
     loop through new array, bringing those indexs to the front. 
+    sorting - private method -> run it after adding a element
+    // ill be trying to implement quick sort but we made sure everyone in my group has some sorting algoritim to do, 
+    talking about insertion sort
