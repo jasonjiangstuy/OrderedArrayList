@@ -34,5 +34,11 @@ public class tester {
         // test starting capacity
         NoNullArrayList<String> notjason = new NoNullArrayList<String>(5);
         
+        // test starting capacity
+        OrderedArrayList<Integer> notjason2 = new OrderedArrayList<Integer>(5);
+        OrderedArrayList<Integer> notjason21 = new OrderedArrayList<Integer>();
+
+        // test add
+        
     }
 }
