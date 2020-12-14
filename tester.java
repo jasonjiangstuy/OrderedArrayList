@@ -12,6 +12,27 @@ public class tester {
             System.out.println("good" + jason);
         }
 
-        // error
+        // test insert
+        jason.add(0, "this was added");
+        try{
+            jason.add(0, null);// error
+        }
+        catch (IllegalArgumentException e){
+            System.out.println("good" + jason);
+        }
+
+        // test set
+
+        jason.set(0, "i dont think i was here before");
+        try{
+            jason.set(0, null);// error
+        }
+        catch (IllegalArgumentException e){
+            System.out.println("good" + jason);
+        }    
+
+        // test starting capacity
+        NoNullArrayList<String> notjason = new NoNullArrayList<String>(5);
+        
     }
 }
