@@ -23,17 +23,26 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
     }
 
     public T set(int index, T e){
+       
+        if (e == null){
+            throw new IllegalArgumentException("cannot set null as a value");
+        }
         T hold = super.remove(index);
         add(e);
         return hold;
     }
     private int findSpot(T element){ // return index to insert to
-        int i = 0;
-        for (i = 0; i < super.size(); i ++){
-            if (element.compareTo(super.get(i)) < 0){
-                return i;
+        if (element != null){
+            int i = 0;
+            for (i = 0; i < super.size(); i ++){
+                if (element.compareTo(super.get(i)) < 0){
+                    return i;
+                }
             }
+            return super.size();
         }
-        return super.size();
+        else{
+            return super.size();
+        }
     }
 }
