@@ -39,6 +39,25 @@ public class tester {
         OrderedArrayList<Integer> notjason21 = new OrderedArrayList<Integer>();
 
         // test add
-        
+        notjason2.add(1);
+        notjason2.add(2);
+        notjason2.add(0);
+        System.out.println(notjason2);
+
+        // test other add
+        notjason21.add(3, 1);
+        notjason21.add(1, 2);
+        notjason21.add(0, 0);
+        System.out.println(notjason21);
+
+        // test set
+        notjason21.set(0, 0);
+        System.out.println(notjason21);// same
+        notjason2.set(1, -4);
+        System.out.println(notjason2);// diffrent
+
+
+
+
     }
 }
